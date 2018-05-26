@@ -29,10 +29,30 @@ body {
 }
 
 .menu-container {
-  
+  padding: 30px 75px;
+}
+
+.menu-description {
+  font-style: italic;
 }
 
 .menu-title {
   font-size: 20px;
 }
 
+.menu-item {
+  padding: 10px 20px;
+}
+
+.sub-items {
+  margin-bottom: 0;
+}
+
+.divider {
+  border-top: 3px solid rgba(0,0,0,.1);
+  width: 50%;
+}
+
+.sub-menu {
+  padding-top: 30px;
+}
