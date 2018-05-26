@@ -1,0 +1,38 @@
+/* Navbar Styling */
+.navbar {
+  padding: 0px;
+  background-color: rgb(0, 0, 0, .9);
+}
+
+.navbar-brand>img {
+  height: 80%;
+  padding: 7px 15px;
+  width: auto;
+}
+
+.nav-item > a {
+  color: #fff;
+}
+/* Navbar End */
+html {
+  background-color: #000;
+}
+
+body {
+  padding-top: 85px;
+}
+
+.sanguiccio-outside {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.menu-container {
+  
+}
+
+.menu-title {
+  font-size: 20px;
+}
+
