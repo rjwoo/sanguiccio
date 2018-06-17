@@ -37,7 +37,7 @@ body {
 }
 
 .header-text {
-  padding: 0 100px;
+  padding: 0 150px;
 }
 
 .header-title {
@@ -46,6 +46,7 @@ body {
 
 .header-description {
   color: #fff;
+  margin-bottom: 0;
 }
 
 .header-twitter {
@@ -56,12 +57,17 @@ body {
   height: 300px !important;
 }
 
-/* 
-.sanguiccio-outside {
-  width: 100%;
-  height: auto;
-  z-index: 0;
-} */
+.share {
+  padding: 10px 0;
+}
+
+.share-icons {
+  height: 40px;
+}
+
+.std-icon {
+  height: 50px;
+}
 
 .menu-container {
   padding: 30px 75px;
@@ -101,5 +107,26 @@ section.middle-img {
 }
 
 .middle-section {
-  height: 200px;
+  height: 300px;
+}
+
+.hours-container {
+  padding: 50px 200px;
+  text-align: center;
+}
+
+.hours-title {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+}
+
+.day {
+  font-weight: bold;
+}
+
+.sanguiccio-location {
+  width: 100%;
 }
