@@ -24,10 +24,44 @@ body {
 }
 
 .sanguiccio-outside {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  padding: 0 100px;
+}
+
+.header-title {
+  color: #fff;
+}
+
+.header-description {
+  color: #fff;
+}
+
+.header-twitter {
+  padding: 50px 0;
+}
+
+.twitter-timeline {
+  height: 300px !important;
+}
+
+/* 
+.sanguiccio-outside {
   width: 100%;
   height: auto;
   z-index: 0;
-}
+} */
 
 .menu-container {
   padding: 30px 75px;
