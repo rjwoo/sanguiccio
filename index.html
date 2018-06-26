@@ -12,52 +12,54 @@
     <link rel="icon" href="img/logos/sanguiccio-icon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="overwrite-bootstrap.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
-
-    <div class="container">
-        <nav class="navbar navbar-default fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/logos/white-logo-solo-md.png" alt="Sanguiccio Deli-Cafe">
-                    </a>
-                </div>
-                <div id="navbar">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Location & Hours</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">The Buzz</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.skipthedishes.com/sanguiccio-deli-cafe-preston-ottawa">Order Delivery</a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="nav-container container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                    <img src="img/logos/white-logo-solo-md.png" alt="Sanguiccio Deli-Cafe">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Location & Hours</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">The Buzz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.skipthedishes.com/sanguiccio-deli-cafe-preston-ottawa">Order Delivery</a>
+                </li>
+                </ul>
             </div>
         </nav>
     </div>
 
-    <div class="sanguiccio-outside" style="background-image: url('img/little-italy.jpg')">
+    <div class="sanguiccio-outside container-fluid" style="background-image: url('img/little-italy.jpg')">
         <div class="row header">
-            <div class="col-8 header-text">
-                <h1 class="header-title">Sanguiccio | Deli-Cafe</h1>
+            <div class="col-lg-8 col-md-7 col-sm-12 header-text">
+                <h1 class="header-title">Sanguiccio <span class="tag-break">|</span> <span class="tagline">Deli-Cafe</span></h1>
                 <p class="header-description">A gourmet, Italian-style sandwich shop in the heart of Ottawa’s Little Italy. Where taste matters, using only the freshest ingredients. Be sure to check out our daily specials on Twitter.</p>
                 <div class="share">
                     <a href="https://www.facebook.com/pages/Sanguiccio/142596799092246"><img src="img/fb-icon.png" target="_blank" class="share-icons"></a>
                     <a href="https://www.instagram.com/sanguiccio/" target="_blank"><img src="img/ig-icon.png" class="share-icons"></a>
                 </div>
-                <div>
+                <div class="order">
                     <a href="https://www.skipthedishes.com/sanguiccio-deli-cafe-preston-ottawa" target="_blank"><img src="img/skipthedishes.png" class="std-icon"></a>
                 </div>
+                
             </div>
-            <div class="col-4 header-twitter">
+            <div class="col-lg-4 col-md-5 col-sm-12 header-twitter">
                 <h2 class="header-title">Daily Specials</h2>
                 <a class="twitter-timeline" data-width="300" data-height="300" data-theme="light" data-link-color="#9266CC" href="https://twitter.com/sanguiccio?ref_src=twsrc%5Etfw">Tweets by sanguiccio</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -65,7 +67,7 @@
     </div>
 
     <section id="menu">
-        <div class="menu-container">
+        <div class="menu-container container-fluid">
 
             <h2 class="text-center">Sandwiches</h2>
             <p class="text-center menu-description">The sandwiches at Sanguiccio's are all made to order with the best and freshest ingredients. </p>
@@ -126,14 +128,14 @@
             </div>
             <h2 class="bev-title">Hot Beverages</h2>
             <div class="row menu-row">
-                <div class="col-lg-6 col-12 menu-item">
+                <div class="col-lg-6 col-12 bev-menu-item">
                     <p class="sub-items">Tea - $2.00</p>
                     <p class="sub-items">Espresso - $1.75 | $3.25</p>
                     <p class="sub-items">Espresso Macchiato - $1.75 | $3.25</p>
                     <p class="sub-items">Caffe Americano - $3.25</p>
                     <p class="sub-items">Capuccino - $3.25 | $3.75</p>
                 </div>
-                <div class="col-lg-6 col-12 menu-item">
+                <div class="col-lg-6 col-12 bev-menu-item">
                     <p class="sub-items">Caffe Latte - $3.25 | $3.75</p>
                     <p class="sub-items">Latte Macchiato - $3.25 | $3.75</p>
                     <p class="sub-items">Latte e Nutella - $4.75</p>
@@ -143,7 +145,7 @@
         </div>
     </section>
         
-    <section class="row middle-img" style="background-image: url('img/peppers.jpg')">
+    <section class="middle-img" style="background-image: url('img/peppers.jpg')">
         <div class="middle-section"></div>
     </section>
 
@@ -157,23 +159,23 @@
                     <tbody>
                         <tr>
                             <td class="day">Monday</td>
-                            <td>11.00 AM - 6.30 PM</td>
+                            <td>11.00 AM - 6.00 PM</td>
                         </tr>
                         <tr>
                             <td class="day">Tuesday</td>
-                            <td><span style="letter-spacing: 0.16px;">11.00 AM - 6.30 PM</span></td>
+                            <td><span style="letter-spacing: 0.16px;">11.00 AM - 6.00 PM</span></td>
                         </tr>
                         <tr>
                             <td class="day">Wednesday</td>
-                            <td><span style="letter-spacing: 0.16px;">11.00 AM - 6.30 PM</span></td>
+                            <td><span style="letter-spacing: 0.16px;">11.00 AM - 6.00 PM</span></td>
                         </tr>
                         <tr>
                             <td class="day">Thursday</td>
-                            <td><span style="letter-spacing: 0.16px;">11.00 AM - 6.30 PM</span></td>
+                            <td><span style="letter-spacing: 0.16px;">11.00 AM - 6.00 PM</span></td>
                         </tr>
                         <tr>
                             <td class="day">Friday</td>
-                            <td><span style="letter-spacing: 0.16px;">11.00 AM - 6.30 PM</span></td>
+                            <td><span style="letter-spacing: 0.16px;">11.00 AM - 6.00 PM</span></td>
                         </tr>
                         <tr>
                             <td class="day">Saturday</td>
@@ -244,11 +246,11 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="container-fluid">
         <div class="row">
             <div class="col-12 text-center footer-icons">
-                <a href="#"><img src="img/fb-icon.png" class="footer-share"></a>
-                <a href="#"><img src="img/ig-icon.png" class="footer-share"></a>
+                <a href=https://www.facebook.com/pages/Sanguiccio/142596799092246""><img src="img/fb-icon.png" class="footer-share"></a>
+                <a href="https://www.instagram.com/sanguiccio/"><img src="img/ig-icon.png" class="footer-share"></a>
             </div>
             <div class="col-12 text-center footer-text">
                     <p>Address: 183 Preston St. Ottawa, ON K1R 7P8</p>
@@ -263,11 +265,8 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
