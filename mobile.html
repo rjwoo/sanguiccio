@@ -12,43 +12,106 @@
     <link rel="icon" href="img/logos/sanguiccio-icon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="overwrite-bootstrap.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+    </script>
     <script src="js/main.js"></script>
 </head>
 
 <body>
-    <div class="nav-container">
-        <nav class="navbar navbar-expand-lg">
+    <div class="nav-container container-fluid">
+        <nav class="navbar navbar-dark navbar-expand-lg">
             <a class="navbar-brand" href="#">
-                <img src="img/logos/white-logo-solo-md.png" alt="Sanguiccio Deli-Cafe">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="img/logos/white-logo-solo-md.png" alt="Sanguiccio Deli-Cafe">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Location & Hours</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">The Buzz</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.skipthedishes.com/sanguiccio-deli-cafe-preston-ottawa">Order Delivery</a>
-                    </li>
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#location-and-hours">Location & Hours</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#buzz">The Buzz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.skipthedishes.com/sanguiccio-deli-cafe-preston-ottawa">Order Delivery</a>
+                </li>
                 </ul>
             </div>
         </nav>
     </div>
 
-<footer>
+    <div class="sanguiccio-outside container-fluid" style="background-image: url('img/little-italy.jpg')">
+        <div class="row header">
+            <div class="col-lg-8 col-md-7 col-sm-12 header-text">
+                <h1 class="header-title">Sanguiccio <span class="tag-break">|</span> <span class="tagline">Deli-Cafe</span></h1>
+                <p class="header-description">A gourmet, Italian-style sandwich shop in the heart of Ottawa’s Little Italy. Where taste matters, using only the freshest ingredients. Be sure to check out our daily specials on Twitter.</p>
+                <div class="share">
+                    <a href="https://www.facebook.com/pages/Sanguiccio/142596799092246"><img src="img/fb-icon.png" target="_blank" class="share-icons"></a>
+                    <a href="https://www.instagram.com/sanguiccio/" target="_blank"><img src="img/ig-icon.png" class="share-icons"></a>
+                </div>
+                <div class="order">
+                    <a href="https://www.skipthedishes.com/sanguiccio-deli-cafe-preston-ottawa" target="_blank"><img src="img/skipthedishes.png" class="std-icon"></a>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-12 header-twitter">
+                <h2 class="header-title">Daily Specials</h2>
+                <a class="twitter-timeline" data-width="300" data-height="300" data-theme="light" data-link-color="#9266CC" href="https://twitter.com/sanguiccio?ref_src=twsrc%5Etfw">Tweets by sanguiccio</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu" style="background-color: red; height: 300px;">
+       
+    </div>
+        
+    <section class="middle-img" style="background-image: url('img/peppers.jpg')">
+        <div class="middle-section"></div>
+    </section>
+
+    <div id="location-and-hours" style="background-color: blue; height: 300px">
+       
+    </div>
+
+    <div id="buzz" style="background-color: yellow; height: 300px;">
+        
+    </div>
+
+    <footer class="container-fluid">
         <div class="row">
             <div class="col-12 text-center footer-icons">
-                <a href="https://www.facebook.com/pages/Sanguiccio/142596799092246""><img src="img/fb-icon.png" class="footer-share"></a>
+                <a href=https://www.facebook.com/pages/Sanguiccio/142596799092246""><img src="img/fb-icon.png" class="footer-share"></a>
                 <a href="https://www.instagram.com/sanguiccio/"><img src="img/ig-icon.png" class="footer-share"></a>
             </div>
             <div class="col-12 text-center footer-text">
@@ -61,11 +124,5 @@
     </footer>
 
 </body>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
