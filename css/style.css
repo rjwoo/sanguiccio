@@ -21,10 +21,37 @@
 .navbar .navbar-toggler .icon-bar{
   background-color: #fff !important;
 }
+
+.nav-link {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 20px;
+}
+
 /* Navbar End */
 
 html {
   background-color: #000;
+}
+
+body {
+  margin-top: 85px;
+}
+
+p, td {
+  font-family: 'Muli', sans-serif;
+}
+
+h2 {
+  font-family: 'Archivo Narrow', sans-serif;
+  letter-spacing: 1px;
+}
+
+h4.menu-title {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+p.address-footer {
+  margin-bottom: 0;
 }
 
 .sanguiccio-outside {
@@ -45,7 +72,12 @@ html {
 }
 
 .header-title {
+  font-family: 'Archivo Narrow', sans-serif;
   color: #fff;
+}
+
+.tagline {
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 .header-description {
@@ -289,4 +321,3 @@ footer {
     padding: 50px 150px;
   }
 }
-
